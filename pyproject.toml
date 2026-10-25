@@ -1,0 +1,31 @@
+[project]
+name = "huginn-rag"
+version = "0.1.0"
+description = "Ferramentas Python do Huginn: ingestão em lote, avaliação do RAG e testes"
+requires-python = ">=3.12"
+dependencies = [
+  "httpx>=0.27",
+  "psycopg[binary]>=3.2",
+]
+
+[project.optional-dependencies]
+juiz = ["anthropic>=0.70"]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["huginn_rag"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]  # o formatter cuida do código; sobram strings de prompt

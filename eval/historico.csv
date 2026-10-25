@@ -1,0 +1,7 @@
+quando,rotulo,modo,k,hit_at_k,fidelidade,escalonamento,injecao,latencia_p95_ms,custo_medio_usd
+2026-10-25 08:56,linha de base 800/100,recuperacao,4,0.96,,,,2296,0.0
+2026-10-25 09:01,chunk 400/50,recuperacao,4,0.96,,,,2315,0.0
+2026-10-25 09:09,chunk 1200/150,recuperacao,4,0.96,,,,277,0.0
+2026-10-25 09:10,chunk 800/100 k=2,recuperacao,2,0.88,,,,265,0.0
+2026-10-25 09:10,chunk 800/100 k=6,recuperacao,6,0.96,,,,259,0.0
+2026-10-25 09:10,linha de base 800/100,recuperacao,4,0.96,,,,242,0.0
